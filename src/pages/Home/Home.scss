@@ -1,0 +1,33 @@
+.home {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  &__filter {
+    flex-grow: 1;
+    margin-right: 10px;
+    max-width: 400px;
+    outline: none;
+  }
+
+  &__favorite {
+    text-decoration: none;
+    color: #000;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  &__albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__album {
+    width: 300px;
+    margin: 5px;
+  }
+}
