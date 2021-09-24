@@ -9,12 +9,12 @@ const AlbumCard = ({ keyword, title, userName, id, className }: Props) => {
     if (keyword) {
         const titleArr = title.split(new RegExp(`(${keyword})`, "ig"))
         titleArr.forEach(str => {
-            if (str.toLocaleLowerCase() === keyword.toLocaleLowerCase()) combinedTitle = <>{combinedTitle}<span className="album-photo--highlight">{str}</span></>
+            if (str.toLocaleLowerCase() === keyword.toLocaleLowerCase()) combinedTitle = <>{combinedTitle}<span className="album-card--highlight">{str}</span></>
             else combinedTitle = <>{combinedTitle}{str}</>
         });
         const usernameArr = userName.split(new RegExp(`(${keyword})`, "ig"))
         usernameArr.forEach(str => {
-            if (str.toLocaleLowerCase() === keyword.toLocaleLowerCase()) combinedUsername = <>{combinedUsername}<span className="album-photo--highlight">{str}</span></>
+            if (str.toLocaleLowerCase() === keyword.toLocaleLowerCase()) combinedUsername = <>{combinedUsername}<span className="album-card--highlight">{str}</span></>
             else combinedUsername = <>{combinedUsername}{str}</>
         });
     } else {
